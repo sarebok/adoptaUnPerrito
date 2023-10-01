@@ -1,9 +1,7 @@
 const Tags = () => {
   return (
     <>
-      <h1>
-        Example heading <span class="badge bg-secondary">New</span>
-      </h1>
+      <h4>esto tiene que ser un badge de bootstrap</h4>
     </>
   );
 };

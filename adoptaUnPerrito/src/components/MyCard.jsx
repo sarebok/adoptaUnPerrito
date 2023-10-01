@@ -1,10 +1,14 @@
 import Tags from "./Tags";
 
-const MyCard = () => {
+const MyCard = (props) => {
   return (
     <>
-      <h1>Esto deberia ser una imagen</h1>
-      <Tags></Tags>
+      <div className="myCard">
+        <img src={props.imgUrl} alt="perrito" />
+        <h2>{props.nombre}</h2>
+        <p>{props.descripcion}</p>
+        <Tags></Tags>
+      </div>
     </>
   );
 };

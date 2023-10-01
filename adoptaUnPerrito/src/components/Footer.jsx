@@ -1,8 +1,8 @@
-const Footer = () => {
+const Footer = (props) => {
   return (
     <>
       <footer>
-        <p>Generar un componente Footer.jsx que muestre el pie de página o footer con una breve descripción de la galería de imágenes.</p>
+        <p>{props.descripcion}</p>
       </footer>
       ;
     </>
