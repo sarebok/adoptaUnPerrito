@@ -1,7 +1,12 @@
-const Tags = () => {
+import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
+
+const Tags = (props) => {
   return (
     <>
-      <h4>esto tiene que ser un badge de bootstrap</h4>
+      <Badge className={props.colour} as={Button}>
+        {props.texto}
+      </Badge>
     </>
   );
 };

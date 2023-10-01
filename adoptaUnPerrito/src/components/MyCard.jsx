@@ -3,11 +3,11 @@ import Tags from "./Tags";
 const MyCard = (props) => {
   return (
     <>
-      <div className="myCard">
+      <div className="my-card">
         <img src={props.imgUrl} alt="perrito" />
         <h2>{props.nombre}</h2>
         <p>{props.descripcion}</p>
-        <Tags></Tags>
+        <Tags texto={props.raza} colour={props.color}></Tags>
       </div>
     </>
   );
