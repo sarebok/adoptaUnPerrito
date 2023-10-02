@@ -1,13 +1,15 @@
 import Tags from "./Tags";
 
-const MyCard = (props) => {
+const MyCard = ({ perrotes }) => {
+  console.log("imprimiendo objeto desde card2 ", perrotes);
+
   return (
     <>
       <div className="my-card">
-        <img src={props.imgUrl} alt="perrito" />
-        <h2>{props.nombre}</h2>
-        <p>{props.descripcion}</p>
-        <Tags texto={props.raza} colour={props.color}></Tags>
+        <img src={perrotes.imagen} alt="perrito" />
+        <h2>{perrotes.nombre}</h2>
+        <p>{perrotes.descripcion}</p>
+        <Tags texto={perrotes.raza} colour={perrotes.colorBadge}></Tags>
       </div>
     </>
   );
